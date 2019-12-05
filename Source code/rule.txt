@@ -1,0 +1,19 @@
+probable: VaD <- fn ^ radVasc ^ not(AD v DLB)
+probable: DLB  <- extraPyr ^ visHall ^ not(fn)
+probable: DLB  <- fluctCog ^ visHall ^ not(fn)
+probable: DLB  <- fluctCog ^ extraPyr ^ not(fn)
+probable: VaD ^ DLB <- fn ^ radVasc ^ extraPyr ^ fluctCog
+possible: VaD ^ DLB <- fn ^ fluctCog
+possible: VaD ^ AD <- fn ^ slow ^ prog ^ epiMem
+possible: VaD ^ AD <- radVasc ^ slow ^ prog ^ epiMem
+possible: DLB ^ AD <- fluctCog ^ slow ^ prog ^ epiMem
+possible: DLB ^ AD <- extraPyr ^ slow ^ prog ^ epiMem
+possible: DLB ^ AD <- visHall ^ slow ^ prog ^ epiMem
+possible: DLB <- fluctCog
+possible: DLB <- visHall
+possible: DLB <- extraPyr
+possible: VaD <- fn
+possible: VaD <- radVasc
+supported: VaD <- fluctCog
+plausible: VaD <- fn
+probable: AD <- slow ^ prog ^ epiMem ^ not (VaD v DLB)

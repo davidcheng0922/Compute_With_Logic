@@ -1,0 +1,7 @@
+confirmed : fn <- T
+confirmed : radVasc <- T
+confirmed : extraPyr <- T
+confirmed : fluctCog <- T
+probable : VaD ^ DLB  <- fn ^ radVasc ^ extraPyr ^ fluctCog
+possible : DLB <- extraPyr
+probable : VaD <- fn ^ radVasc ^ not (AD v DLB)

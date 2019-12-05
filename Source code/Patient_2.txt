@@ -1,0 +1,4 @@
+confirmed : slow <- T
+confirmed : extraPyr <- T
+confirmed : prog <- T
+confirmed : epiMem <- T
